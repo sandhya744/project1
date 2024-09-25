@@ -5,167 +5,301 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-            @media screen and (min-width: 768px) {
-        body {
-          background-color: white;
-          overflow-x: hidden;
-        }
-        .swarupa {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-        }
-
-        .eye {
-          opacity: 0.5;
-        }
-        nav {
-          grid-column: 2/4;
-          grid-row: 2/3;
-          display: grid;
-          place-items: center;
-          text-align: center;
-        }
-        nav ul {
-          list-style-type: none;
-        }
-        nav ul a {
-          display: inline-block;
-          padding: 20px;
-          text-decoration: none;
-          color: black;
-        }
-        .photo {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(1, 1fr);
-        }
-        .welcome {
-          background-color: rgb(243, 67, 67);
-          color: white;
-          display: grid;
-          text-align: center;
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-        }
-        #to {
-          grid-column: 1/2;
-          grid-row: 2/3;
-        }
-        .ravi {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          row-gap: 20px;
-          column-gap: 20px;
-        }
-        #blue {
-          color: blue;
-        }
-        .abhi {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(1, 1fr);
-          column-gap: 95px;
-        }
-        .abhi1 {
-          border: 1px solid rgb(236, 230, 230);
-          box-shadow: 3px 3px 3px rgb(236, 230, 230);
-        }
-        .abhi2 {
-          border: 1px solid rgb(236, 230, 230);
-          box-shadow: 3px 3px 3px rgb(236, 230, 230);
-        }
-        #color {
-          color: blue;
-        }
-        .abhi3 {
-          border: 1px solid rgb(236, 230, 230);
-          box-shadow: 3px 3px 3px rgb(236, 230, 230);
-        }
-        .template,
-        .usage,
-        .vision,
-        .new666,
-        .dow,
-        .sites {
-          padding: 15px;
-          line-height: 20px;
-        }
-        .details {
-          background-color: rgb(243, 67, 67);
-          color: white;
-          display: grid;
-          text-align: center;
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-        }
-        #m {
-          grid-column: 1/2;
-          grid-row: 2/3;
-        }
-        .read {
-          background-color: rgb(243, 67, 67);
-          color: white;
-          display: grid;
-          text-align: center;
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-        }
-        #r {
-          grid-column: 1/2;
-          grid-row: 2/3;
-        }
-        .feature {
-          background-color: rgb(243, 67, 67);
-          color: white;
-          display: grid;
-          text-align: center;
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-        }
-        #f {
-          grid-column: 1/2;
-          grid-row: 2/3;
-        }
-        .ajay {
-          display: grid;
-          padding: 15px;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(1, 1fr);
-        }
-        .lucky {
-          display: grid;
-          grid-template-columns: repeat(26, 1fr);
-          grid-template-rows: repeat(1, 1fr);
-        }
-        .s1 {
-          grid-column: 13/14;
-          grid-row: 1/2;
-        }
-        .s2 {
-          grid-column: 14/15;
-          grid-row: 1/2;
-        }
-        .s3 {
-          grid-column: 15/16;
-          grid-row: 1/2;
-        }
+        @media screen and (min-width:768px) {
+    .main{
+        background-color: white;
+        height: 350vh;
+        width: 92vw;
+        margin: auto;
+    }
+    .eye{
+         position: relative;
+         left: 45px;
+         top: 23px;
+         opacity: 0.5;
+         
+    }
+    .newvision{
+        width: 100px;
+        font-size: 15px;
+        position: relative;
+        left: 68px;
+        top: 3px;
+        opacity: 0.5;
+    }
+    .navbar{
+        border:1px solid rgb(236, 230, 230);
+        box-shadow: 2px 2px 2px rgb(236, 230, 230);
+        height: 30px;
+        width: 550px;
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 400px;
+        top: 30px;
+    }
+     .bar{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 477px;
+        top:3px;
+        
+     }
+     .photo{
+        height: 700px;
+        width: 1250px;
+        position: relative;
+        left:0px;
+        top: 10px;
+       
+     }
+     .welcome{
+        height: 50px;
+        width: 230px;
+        background-color: rgb(243, 67, 67);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -10px;
+        left:60px ;
+     }
+     .u{
+        height: 150px;
+        width: 240px;
+        position: relative;
+        left: 65px;
+        top: 40px;
+     }
+     .best{
+        height: 220px;
+        width: 240px;
+        text-align:left;
+        line-height: 20px;
+        position: relative;
+        left: 330px;
+        top: -130px;
+     }
+     .white{
+        height: 150px;
+        width: 240px;
+        position: relative;
+        left: 640px;
+        top: -350px;
+     }
+     .new{
+        height: 220px;
+        width: 240px;
+        text-align:left;
+        line-height: 20px;
+        position: relative;
+        left:920px ;
+        top: -520px;
+     }
+     .house{
+          height: 150px;
+          width: 240px;
+          position: relative;
+          left: 50px;
+          top: -510px;
+     }
+      .most{
+         height: 220px;
+         width: 240px;
+         text-align:left;
+         line-height: 20px;
+         position: relative;
+         left:330px ;
+         top: -680px;
       }
-      @media screen and (max-width: 368px) {
-        .main1{
-          display: none;
-        }
-        .eye {
-          opacity: 0.5;
-        }
-        .swarupa {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-        }
-      }
-       </style>
+     #blue{
+        color: blue;
+     }
+     .rod{
+        height: 150px;
+        width: 240px;
+        position: relative;
+        left: 640px;
+        top: -907px;
+     }
+     .simple{
+        height: 220px;
+        width: 240px;
+        text-align:left;
+        line-height: 20px;
+        position: relative;
+        left:920px ;
+        top: -1080px;
+     }
+     .template{
+      border: 1px solid rgb(236, 230, 230);
+      box-shadow: 3px 3px 3px rgb(236, 230, 230);
+      height: 330px;
+      width: 320px;
+      position: relative;
+      left: 50px;
+      top: -1070px;
+     }
+     .vision{
+      border: 1px solid rgb(236, 230, 230);
+      box-shadow: 3px 3px 3px rgb(236, 230, 230);
+      height: 330px;
+      width: 320px;
+      position: relative;
+      left: 435px;
+      top: -1400px;
+     }
+     .dow{
+      border: 1px solid rgb(236, 230, 230);
+      box-shadow: 3px 3px 3px rgb(236, 230, 230);
+      height: 330px;
+      width: 320px;
+      position: relative;
+      left: 820px;
+      top: -1730px;
+     }
+     .scope{
+      height: 50px;
+      width: 50px;
+      position: relative;
+      left: 30px;
+      top: 20px;
+     }
+     .micro{
+      height: 45px;
+      width: 45px;
+      position: relative;
+      left: 30px;
+      top: 20px;
+     }
+    .glass{
+      height: 50px;
+      width: 50px;
+      position: relative;
+      left: 30px;
+      top: 20px;
+    }
+    .usage{
+      height: 220px;
+      width: 280px;
+      line-height: 20px;
+      position: relative;
+      left: 30px;
+      top: 25px;
+    }
+     .details{
+      background-color:rgb(243, 67, 67);
+      color: white;
+      height: 40px;
+      width: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 150px;
+      top: -30px;
+     }
+     #color{
+      color: blue;
+     }
+     .new666{
+       height: 220px;
+       width: 280px;
+       line-height: 20px;
+       position: relative;
+       left: 30px;
+       top: 25px;
+    }
+    .sites{
+       height: 220px;
+       width: 280px;
+       line-height: 20px;
+       position: relative;
+       left: 30px;
+       top: 25px;
+    }
+    .read{
+      background-color:rgb(243, 67, 67);
+      color: white;
+      height: 40px;
+      width: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 150px;
+      top: -30px;
+    }
+    .feature{
+      background-color:rgb(243, 67, 67);
+      color: white;
+      height: 50px;
+      width: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 50px;
+      top: -1680px;
+    }
+    .cat{
+      position: relative;
+      left: 50px;
+      top: -1620px;
+      height: 250px;
+      width: 240px;
+    }
+    .bird{
+      position: relative;
+      left: 337px;
+      top: -1872px;
+      height: 250px;
+      width: 240px;
+    }
+    .love{
+      position: relative;
+      left: 624px;
+      top: -2125px;
+      height: 250px;
+      width: 240px;
+    }
+    .trees{
+      position: relative;
+      left: 907px;
+      top: -2380px;
+      height: 250px;
+      width: 240px;
+    }
+    .sandy{
+      height: 15px;
+      width: 15px;
+      position: relative;
+      left: 550px;
+      top: -2330px;
+    }
+    .ajay{
+      height: 15px;
+      width: 15px;
+      position: relative;
+      left: 570px;
+      top: -2349px;
+    }
+    .abhi{
+      height: 15px;
+      width: 15px;
+      position: relative;
+      left: 590px;
+      top: -2368px;
+    }
+    }
+   
+   
+    </style>
 </head>
 <body>
    <div class="main1">
