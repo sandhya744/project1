@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
+        .maintain2{
+          display: none;
+        }
+
         body {
           background-color: white;
           overflow-x: hidden;
@@ -41,8 +45,6 @@
           grid-template-rows: repeat(1, 1fr);
         }
         .welcome {
-          background-color: rgb(243, 67, 67);
-          color: white;
           display: grid;
           text-align: center;
           grid-template-columns: repeat(1, 1fr);
@@ -59,42 +61,13 @@
           row-gap: 20px;
           column-gap: 20px;
         }
-        #blue {
-          color: blue;
-        }
         .abhi {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(1, 1fr);
           column-gap: 95px;
         }
-        .abhi1 {
-          border: 1px solid rgb(236, 230, 230);
-          box-shadow: 3px 3px 3px rgb(236, 230, 230);
-        }
-        .abhi2 {
-          border: 1px solid rgb(236, 230, 230);
-          box-shadow: 3px 3px 3px rgb(236, 230, 230);
-        }
-        #color {
-          color: blue;
-        }
-        .abhi3 {
-          border: 1px solid rgb(236, 230, 230);
-          box-shadow: 3px 3px 3px rgb(236, 230, 230);
-        }
-        .template,
-        .usage,
-        .vision,
-        .new666,
-        .dow,
-        .sites {
-          padding: 15px;
-          line-height: 20px;
-        }
         .details {
-          background-color: rgb(243, 67, 67);
-          color: white;
           display: grid;
           text-align: center;
           grid-template-columns: repeat(1, 1fr);
@@ -105,8 +78,6 @@
           grid-row: 2/3;
         }
         .read {
-          background-color: rgb(243, 67, 67);
-          color: white;
           display: grid;
           text-align: center;
           grid-template-columns: repeat(1, 1fr);
@@ -117,8 +88,6 @@
           grid-row: 2/3;
         }
         .feature {
-          background-color: rgb(243, 67, 67);
-          color: white;
           display: grid;
           text-align: center;
           grid-template-columns: repeat(1, 1fr);
@@ -159,18 +128,36 @@
         .eye {
           opacity: 0.5;
         }
-        .swarupa {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-        }
+        nav ul a {
+          display: inline;
+          padding: 20px;
+          text-decoration: none;
+          color: black;
+        
       }
-   
-   
+      .lucky {
+          display: grid;
+          grid-template-columns: repeat(14, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+        }
+        .s1 {
+          grid-column: 6/7;
+          grid-row: 1/2;
+        }
+        .s2 {
+          grid-column: 7/8;
+          grid-row: 1/2;
+        }
+        .s3 {
+          grid-column: 8/9;
+          grid-row: 1/2;
+        }
+
+  }
     </style>
-</head>
-<body>
-   <div class="maintain1">
+  </head>
+  <body>
+    <div class="maintain1">
       <div class="swarupa">
         <div class="eye" style="position: relative; left: 30px; top: 30px">
         
@@ -240,7 +227,8 @@
       </div>
       <div
         class="welcome"
-        style="width: 25%; margin-left: 50px; margin-top: 3px"
+        style="width: 25%; margin-left: 50px; margin-top: 3px; background-color: rgb(243, 67, 67);
+          color: white;"
       >
         <span id="to">Welcome to New Vision</span>
       </div>
@@ -272,7 +260,7 @@
           <p></p>
           <p>
             Aliquarm purus arcu, conguen<br />
-            a gravida ac,facilisis vel erat.Maecenas.<br /><span id="blue"
+            a gravida ac,facilisis vel erat.Maecenas.<br /><span style="color: blue;"
               >Hover #09f</span
             >
           </p>
@@ -288,8 +276,10 @@
       </div>
       <pre></pre>
       <div class="abhi">
-        <div class="abhi1">
-          <div class="template">
+        <div class="abhi1" style=" border: 1px solid rgb(236, 230, 230);
+          box-shadow: 3px 3px 3px rgb(236, 230, 230);">
+          <div class="template" style="padding: 15px;
+          line-height: 20px;">
             <svg
               height="50px"
               width="50px"
@@ -316,7 +306,8 @@
               </g>
             </svg>
           </div>
-          <div class="usage">
+          <div class="usage" style="padding: 15px;
+          line-height: 20px;">
             <h3>TEMPLATE USAGE</h3>
             <p>
               You can feel free to edit and use New Vision<br />
@@ -326,13 +317,16 @@
           </div>
           <div
             class="details"
-            style="width: 45%; margin-left: 150px; margin-top: -20px"
+            style="width: 45%; margin-left: 150px; margin-top: -20px; background-color: rgb(243, 67, 67);
+          color: white;"
           >
             <span id="m">More Details</span>
           </div>
         </div>
-        <div class="abhi2">
-          <div class="vision">
+        <div class="abhi2" style=" border: 1px solid rgb(236, 230, 230);
+          box-shadow: 3px 3px 3px rgb(236, 230, 230);">
+          <div class="vision" style="padding: 15px;
+          line-height: 20px;">
             <svg
               height="50px"
               width="50px"
@@ -354,18 +348,21 @@
               </g>
             </svg>
           </div>
-          <div class="new666">
+          <div class="new666" style="padding: 15px;
+          line-height: 20px;">
             <h3>NEW VISION</h3>
             <p>
-              <span id="color">New Vision</span> comes with 4 different HTML
+              <span style=" color: blue;">New Vision</span> comes with 4 different HTML
               pages<br />
               and provided free of charge by TemplateMo.You<br />
               can add more pages if you need. Text color is #666
             </p>
           </div>
         </div>
-        <div class="abhi3">
-          <div class="dow">
+        <div class="abhi3" style=" border: 1px solid rgb(236, 230, 230);
+          box-shadow: 3px 3px 3px rgb(236, 230, 230);">
+          <div class="dow" style="padding: 15px;
+          line-height: 20px;">
             <svg
               height="50px"
               width="50px"
@@ -386,7 +383,8 @@
               </g>
             </svg>
           </div>
-          <div class="sites">
+          <div class="sites" style="padding: 15px;
+          line-height: 20px;">
             <h3>DOWNLOAD SITES</h3>
             <p>
               Do not re-distribute our template ZIP file on your<br />
@@ -395,14 +393,16 @@
           </div>
           <div
             class="read"
-            style="width: 50%; margin-left: 150px; margin-top: -20px"
+            style="width: 50%; margin-left: 150px; margin-top: -20px; background-color: rgb(243, 67, 67);
+          color: white;;"
           >
             <span id="r">Read More</span>
           </div>
         </div>
       </div>
       <pre></pre>
-      <div class="feature" style="width: 25%">
+      <div class="feature" style="width: 25%; background-color: rgb(243, 67, 67);
+          color: white;">
         <span id="f">Featured Corouseln Items</span>
       </div>
       <pre></pre>
@@ -525,9 +525,10 @@
         </div>
       </div>
     </div>
-    <div class="maintain2"></div>
+    <div class="maintain2">
       <div class="swarupa">
         <div class="eye">
+        
           <svg
             width="15px"
             height="15px"
@@ -569,6 +570,7 @@
           </svg>
           NEW VISION
         </div>
+
         <nav>
           <ul>
             <a href="#"><li>Home</li></a>
@@ -579,21 +581,24 @@
         </nav>
       </div>
       <div>
-        
+        <pre></pre>
         <img
           class="photo"
           src="./new-vision-01.jpg"
           style="width: 100%"
         />
       </div>
-      <div class="welcome"  style="background-color: rgb(243, 67, 67);
-      color: white;">
+      <div
+        class="welcome"
+        style="width: 47%; background-color: rgb(243, 67, 67);
+          color: white;"
+      >
         <span id="to">Welcome to New Vision</span>
       </div>
       <pre></pre>
       <div class="ravi">
-        <div><img class="u" src="./u.jpg" /></div>
-        <div class="best">
+        <div><img class="u" src="./u.jpg"/></div>
+        <div class="best" >
           <h3>BEST COLLECTION</h3>
           <p>
             Aliquarm purus arcu, conguen<br />
@@ -618,7 +623,7 @@
           <p></p>
           <p>
             Aliquarm purus arcu, conguen<br />
-            a gravida ac,facilisis vel erat.Maecenas.<br /><span id="blue"
+            a gravida ac,facilisis vel erat.Maecenas.<br /><span style="color: blue;"
               >Hover #09f</span
             >
           </p>
@@ -634,8 +639,10 @@
       </div>
       <pre></pre>
       <div class="abhi">
-        <div class="abhi1">
-          <div class="template">
+        <div class="abhi1" style=" border: 1px solid rgb(236, 230, 230);
+          box-shadow: 3px 3px 3px rgb(236, 230, 230);">
+          <div class="template" style="padding: 15px;
+          line-height: 20px;">
             <svg
               height="50px"
               width="50px"
@@ -662,7 +669,8 @@
               </g>
             </svg>
           </div>
-          <div class="usage">
+          <div class="usage" style="padding: 15px;
+          line-height: 20px;">
             <h3>TEMPLATE USAGE</h3>
             <p>
               You can feel free to edit and use New Vision<br />
@@ -673,13 +681,15 @@
           <div
             class="details"
             style="width: 45%; margin-left: 150px; margin-top: -20px; background-color: rgb(243, 67, 67);
-      color: white;"
+          color: white;"
           >
             <span id="m">More Details</span>
           </div>
         </div>
-        <div class="abhi2">
-          <div class="vision">
+        <div class="abhi2" style=" border: 1px solid rgb(236, 230, 230);
+          box-shadow: 3px 3px 3px rgb(236, 230, 230);">
+          <div class="vision" style="padding: 15px;
+          line-height: 20px;">
             <svg
               height="50px"
               width="50px"
@@ -701,18 +711,21 @@
               </g>
             </svg>
           </div>
-          <div class="new666">
+          <div class="new666" style="padding: 15px;
+          line-height: 20px;">
             <h3>NEW VISION</h3>
             <p>
-              <span id="color">New Vision</span> comes with 4 different HTML
+              <span style=" color: blue;">New Vision</span> comes with 4 different HTML
               pages<br />
               and provided free of charge by TemplateMo.You<br />
               can add more pages if you need. Text color is #666
             </p>
           </div>
         </div>
-        <div class="abhi3">
-          <div class="dow">
+        <div class="abhi3" style=" border: 1px solid rgb(236, 230, 230);
+          box-shadow: 3px 3px 3px rgb(236, 230, 230);">
+          <div class="dow" style="padding: 15px;
+          line-height: 20px;">
             <svg
               height="50px"
               width="50px"
@@ -733,7 +746,8 @@
               </g>
             </svg>
           </div>
-          <div class="sites">
+          <div class="sites" style="padding: 15px;
+          line-height: 20px;">
             <h3>DOWNLOAD SITES</h3>
             <p>
               Do not re-distribute our template ZIP file on your<br />
@@ -742,16 +756,16 @@
           </div>
           <div
             class="read"
-            style="width: 50%; margin-left: 150px; margin-top: -20px; background-color:rgb(243, 67, 67);
-      color: white;"
+            style="width: 50%; margin-left: 150px; margin-top: -20px; background-color: rgb(243, 67, 67);
+          color: white;"
           >
             <span id="r">Read More</span>
           </div>
         </div>
       </div>
       <pre></pre>
-      <div class="feature" style="width:25%; background-color: rgb(243, 67, 67);
-      color: white;">
+      <div class="feature" style="width: 25%; background-color: rgb(243, 67, 67);
+          color: white;">
         <span id="f">Featured Corouseln Items</span>
       </div>
       <pre></pre>
@@ -788,7 +802,7 @@
       <div class="lucky">
         <div class="s1">
           <svg
-            style="height: 5%; width: 5%"
+            style="height: 45%; width:45%"
             fill="#f02d2d"
             version="1.1"
             id="Capa_1"
@@ -816,7 +830,7 @@
         </div>
         <div class="s2">
           <svg
-            style="height: 5%; width: 5%"
+            style="height: 45%; width: 45%"
             fill="#dbd2d2"
             version="1.1"
             id="Capa_1"
@@ -845,7 +859,7 @@
         </div>
         <div class="s3">
           <svg
-            style="height: 5%; width: 5%"
+            style="height: 45%; width: 45%"
             fill="#dbd2d2"
             version="1.1"
             id="Capa_1"
@@ -874,5 +888,5 @@
         </div>
       </div>
     </div>
-</body>
+  </body>
 </html>
